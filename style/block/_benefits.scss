@@ -1,0 +1,43 @@
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &::before {
+        content: url(../img/png/shape.png);
+        position: absolute;
+        top: 46px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.benefits__section{
+    position: relative;
+
+    &::after{
+        position: absolute;
+        left: 5%;
+        bottom: -1px;
+        width: 34px;
+        height: 34px;
+        content: url(../img/png/trianglered.png);
+
+    }
+}

@@ -1,0 +1,15 @@
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.features__item{
+    margin-right: 13px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+

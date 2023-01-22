@@ -1,0 +1,19 @@
+.headline {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.headline__title {
+    padding-top: 64px;
+    margin-bottom: 18px;
+
+    
+    &--theme-dark {
+        color: #fff;
+    }
+}
+
+.headline__subtitle {
+    padding: 0 25%;
+    line-height: 19px;
+}

@@ -1,0 +1,49 @@
+.hello {
+    color: $dark;
+    height: 100vh;
+    min-height: 650px;
+    background-color: $light;
+    position: relative;
+
+    &:after{
+        position: absolute;
+        right: 10%;
+        bottom: -3px;
+        content: " ";
+        width: 50px;
+        height: 11px;
+        border: solid;
+        color: #C4C4C4;
+        background: #C4C4C4;
+        transform: rotate(-45deg);
+    }
+}
+
+.hello__title-section {
+    width: 46%;
+}
+
+.hello__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 48px 0;
+    background: url(../img/elipse.png) right center / 50% auto no-repeat;
+}
+
+.hello__main-title {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+
+.hello__desc-title {
+    font-family: 'Alegreya Sans';
+    font-size: 21px;
+    line-height: 1.1;
+    margin-bottom: 49px;
+    padding-right: 23%;
+}

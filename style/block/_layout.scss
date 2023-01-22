@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: $baseFontSize;
+    font-family: "Play", Roboto, Helvetica, sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: #666666;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $containerWidth +20px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+}

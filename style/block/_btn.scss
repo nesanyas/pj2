@@ -1,0 +1,31 @@
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 21px 41px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
+
+    &--theme--pink{
+        background: $pink;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background:#CA1B36
+        }
+    }
+
+    &--theme--transparent{
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        text-transform: none;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+}

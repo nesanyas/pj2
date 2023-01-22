@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.phone-number {
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.phone-number__icon-elem {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.menu__link {
+    text-decoration: none;
+}
