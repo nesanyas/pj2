@@ -10,7 +10,7 @@
     &::before {
         content: url(../img/png/shape.png);
         position: absolute;
-        top: 46px;
+        top: rem(46px);
         right: 0;
         transform: translateX(50%);
     }
@@ -34,9 +34,9 @@
     &::after{
         position: absolute;
         left: 5%;
-        bottom: -1px;
-        width: 34px;
-        height: 34px;
+        bottom: rem(-1px);
+        width: rem(34px);
+        height: rem(34px);
         content: url(../img/png/trianglered.png);
 
     }

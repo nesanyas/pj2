@@ -1,11 +1,11 @@
 .headline {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
 }
 
 .headline__title {
-    padding-top: 64px;
-    margin-bottom: 18px;
+    // padding-top: rem(64px);
+    margin-bottom: rem(18px);
 
     
     &--theme-dark {
@@ -15,5 +15,5 @@
 
 .headline__subtitle {
     padding: 0 25%;
-    line-height: 19px;
+    line-height: rem(19px);
 }

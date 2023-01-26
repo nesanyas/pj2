@@ -6,9 +6,9 @@
     &::before {
         position: absolute;
         right: 10%;
-        top: -25px;
-        width: 35px;
-        height: 35px;
+        top: rem(-25px);
+        width: rem(35px);
+        height: rem(35px);
         content: url(../img/png/polygon2.png);
     }
 }

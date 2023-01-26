@@ -5,7 +5,7 @@
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .menu__list {
@@ -14,7 +14,7 @@
 }
 
 .menu__item {
-    margin-right: 30px;
+    margin-right: rem(30px);
 
     &:last-child {
         margin-right: 0;
@@ -23,17 +23,17 @@
 
 
 .phone-number {
-    font-size: 18px;
+    font-size: $baseFontSize;
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-right: 27px;
+    margin-right: rem(27px);
 }
 
 .phone-number__icon-elem {
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
+    width: rem(14px);
+    height: rem(14px);
+    margin-right: rem(6px);
 }
 
 .menu__link {

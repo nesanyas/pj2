@@ -7,12 +7,13 @@ $pink: #E01F3D;
 $dark: #292929;
 
 
-$z-fixed-menu:100;
+$z-fixed-menu: 100;
 
 @import url(../style/normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
 
 
+@import "block/media";
 
 
 @import "block/layout";
@@ -31,3 +32,4 @@ $z-fixed-menu:100;
 @import "block/radio";
 @import "block/order";
 @import "block/fixedmenu";
+
