@@ -22,18 +22,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: rem(10px);
+    margin-top: rem(26px);
 }
 
 .reviews__display-inner {
     display: flex;
     padding: rem(5px) rem(0px) rem(0px) rem(4px);
-}
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    
 
 .reviews__avatar {
     height: rem(264px);
     width: rem(253px);
     margin-right: rem(40px);
+
+    @include tablets {
+        height: rem(130px);
+        width: rem(130px);
+    }
 }
 
 .reviews__avatar-img {
@@ -61,6 +73,12 @@
     margin-bottom: rem(38px);
     padding-right: rem(62px);
     line-height: rem(19px);
+
+    @include phones {
+        justify-content: center;
+        padding-right: 0;
+    }
+}
 }
     
 

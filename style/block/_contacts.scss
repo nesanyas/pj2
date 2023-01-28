@@ -1,0 +1,44 @@
+
+.section__map {
+    position: relative;
+}
+
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background: url('../img/map.png') right bottom no-repeat;
+   
+}
+
+// .map__contacts {
+//     min-width: 100%;
+// }
+
+.footer {
+    position: absolute;
+    height: rem(60px);
+    left: 0;
+    bottom: 0;
+}
+ 
+ .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+     flex-direction: column;   
+    }
+ }
+
+ .footer__phone-number {
+
+    @include phones{
+        margin: rem(10px);
+    }
+   
+ }
+

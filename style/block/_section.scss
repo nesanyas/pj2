@@ -19,5 +19,9 @@
     text-transform: uppercase;
     // margin-top: rem(64px);
 
+    @include phones {
+        font-size: rem(32px);
+    }
+
 }
 
