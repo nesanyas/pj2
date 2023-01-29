@@ -45,6 +45,7 @@
     @include tablets {
         height: rem(130px);
         width: rem(130px);
+        margin-right: 0;
     }
 }
 
@@ -52,6 +53,8 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+
+    
 }
 
 .reviews__content {

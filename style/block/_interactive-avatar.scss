@@ -7,6 +7,11 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    margin-right: rem(5px);
+
+    &:last-child{
+        margin-right: 0;
+    }
     
     &--active {
         border-color: #E01F3D;

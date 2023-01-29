@@ -622,6 +622,7 @@ img {
   .reviews__display-inner .reviews__avatar {
     height: 8.125rem;
     width: 8.125rem;
+    margin-right: 0;
   }
 }
 .reviews__display-inner .reviews__avatar-img {
@@ -682,6 +683,10 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  margin-right: 0.3125rem;
+}
+.interactive-avatar:last-child {
+  margin-right: 0;
 }
 .interactive-avatar--active {
   border-color: #E01F3D;
@@ -907,13 +912,7 @@ img {
 
 .section__map {
   position: relative;
-}
-
-.map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background: url(../img/map.jpeg) center top no-repeat;
 }
 
 .footer {
@@ -978,32 +977,37 @@ img {
 }
 
 .social__item--t .social__link {
-  background: url(../img/soc/css_sprites-2.png)-110px -10px;
+  background: url(../img/soc/css_sprites-4.png)-110px -10px;
 }
 .social__item--t .social__link:hover {
-  background: url(../img/soc/css_sprites-2.png) -110px -60px;
+  background: url(../img/soc/css_sprites-4.png) -110px -60px;
   -webkit-transition: none;
   transition: none;
 }
 
 .social__item--vk .social__link {
-  background: url(../img/soc/css_sprites-2.png) -60px -110px;
+  background: url(../img/soc/css_sprites-4.png) -60px -110px;
 }
 .social__item--vk .social__link:hover {
-  background: url(../img/soc/css_sprites-2.png)-10px -110px;
+  background: url(../img/soc/css_sprites-4.png) -10px -110px;
   -webkit-transition: none;
   transition: none;
 }
 
 .social__item--f .social__link {
-  background: url(../img/soc/css_sprites-2.png)-60px -10px;
+  background: url(../img/soc/css_sprites-4.png)-60px -10px;
+}
+.social__item--f .social__link:hover {
+  background: url(../img/soc/css_sprites-4.png)-10px -10px;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .social__item--in .social__link {
-  background: url(../img/soc/css_sprites-2.png)-10px -60px;
+  background: url(../img/soc/css_sprites-4.png)-10px -60px;
 }
 .social__item--in .social__link:hover {
-  background: url(../img/soc/css_sprites-2.png)-60px -60px;
+  background: url(../img/soc/css_sprites-4.png) -60px -60px;
   -webkit-transition: none;
   transition: none;
 }
