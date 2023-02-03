@@ -1,0 +1,244 @@
+.slider {
+
+    &__section {
+    background: #F8FAF9;
+    }
+
+&__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+
+    
+}
+
+&__arrow {
+    position: absolute;
+    top: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--icon {
+        overflow: hidden;
+        width: rem(24px);
+        height: rem(40px);
+    }
+
+    &--left {
+        left: 0;
+
+        @include tablets {
+            left: 10%;
+        }
+
+        @include phones {
+            left: 1%;
+        }
+    }
+
+    &--right {
+        right: 0;
+
+        @include tablets {
+            right: 10%;
+        }
+
+        @include phones {
+            right: 1%;
+        }
+    }
+
+    @include tablets {
+        top: 23%;
+    }
+
+
+   
+}
+
+&__list {
+
+    display: flex;
+    right: 0;
+    margin: 0 3%;
+
+    &-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+&__item {
+    max-width: rem(945px);
+
+}
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__img {
+
+        max-width: 100%;
+        height: auto;
+
+        @include phones {
+            max-width: rem(306px);
+            margin-bottom: 5%;
+        }
+
+        &-wrap {
+            width: 45%;
+
+            @include tablets {
+                width: 70%;
+                margin-bottom: 7%;
+            }
+
+            @include phones {
+                width: 60%;
+            }
+            
+        }
+        }
+    
+
+    &__content {
+        width: 50%;
+
+        @include tablets {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(36px);
+        line-height: rem(42px);
+        color: $dark;
+        text-transform: uppercase;
+
+        @include tablets {
+            font-size: rem(28px);
+            line-height: rem(32px);
+        }
+
+        &-wrap {
+            margin-bottom: rem(24px);
+
+        }
+    }
+
+    &__params {
+        background: #9A9A9A;
+        border-radius: 4px;
+        padding: rem(25px) rem(24px);
+        width: rem(90px);
+        height: rem(90px);
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(25px);
+
+        &:hover {
+            background: #6E6E6E;
+
+        }
+
+        &-img {
+            width: rem(38px);
+            height: rem(38px);
+            color: white;
+        }
+
+        @include tablets {
+            display: none;
+        }
+
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        margin-bottom: rem(24px);
+        padding-right: 20%;
+
+        @include tablets {
+            padding: 0;
+        }
+
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: rem(24px);
+
+        @include tablets {
+            justify-content: center;
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        
+        @include tablets {
+            justify-content: center;
+        }
+    }
+
+    &__price {
+        font-size: rem(36px);
+        color: #151515;
+        margin-right: rem(13px);
+
+        @include tablets {
+            margin-right: rem(46px);
+        }
+
+        @include phones {
+            margin-right: 2%;
+        }
+    }
+
+    &__btn {
+        height: rem(60px);
+
+      
+    }
+
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.info {
+    margin-right: rem(88px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__title {
+        text-align: start;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: rem(17px);
+        color: black;
+    }
+}
+

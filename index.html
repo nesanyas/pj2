@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beats</title>
     <link rel="stylesheet" href="./style/main.css">
+    <script defer src="js/hamburger.js"></script>
 
 </head>
 <body>
@@ -54,7 +55,7 @@
                             </span> -->
                             <span class="phone-number__text">8 800 903 90 90</span>
                         </a>
-                        <a href="#" class="hamburger">
+                        <a href="#" class="hamburger" id="burger">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -165,6 +166,153 @@
                    </ul>
                 </div>
             </section>
+            <section class="section slider__section">
+                <div class="container slider__container ">
+                    <div class="slider__arrow slider__arrow--left">
+                    <svg class="slider__arrow--icon">
+                        <use xlink:href="sprite.svg#left"></use>
+                      </svg>
+                    </div>
+                <div class="slider__arrow slider__arrow--right">
+                    <svg class="slider__arrow--icon">
+                        <use xlink:href="sprite.svg#right"></use>
+                    </svg>
+                    </div>
+                        <div class="slider__list-wrap">
+                        <ul class="slider__list">
+                            <li class="slider__item slider__item--active slide">
+                                <div class="slide__img-wrap">
+                                    <img src="../img/ellipse6.png" alt="headphones" class="slide__img">
+                                </div>
+                                <div class="slide__content">
+                                    <div class="dropdown">
+                                        <div class="slide__params">
+                                            <div class="slide__params_img-wrap">
+                                                <svg class="slide__params-img">
+                                                    <use xlink:href="sprite.svg#gear"></use>
+                                                  </svg>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__menu">
+                                            <ul class="dropdown__list">
+                                                <li class="dropdowm__items item">
+                                                    <div class="item__icon">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="sprite.svg#bluetooth"></use>
+                                                          </svg>
+                                                    </div>
+                                                    <div class="item__title">Bluetooth</div>
+                                                    <div class="item__text">4.0</div>
+                                                </li>
+                                                <li class="dropdowm__items item">
+                                                    <div class="item__icon">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="sprite.svg#road"></use>
+                                                          </svg>
+                                                    </div>
+                                                    <div class="item__title">Дальность</div>
+                                                    <div class="item__text">12 м</div>
+                                                </li>
+                                                <li class="dropdowm__items item">
+                                                    <div class="item__icon">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="sprite.svg#charger"></use>
+                                                          </svg>
+                                                    </div>
+                                                    <div class="item__title">Зарядка</div>
+                                                    <div class="item__text">3 ч</div>
+                                                </li>
+                                                <li class="dropdowm__items item">
+                                                    <div class="item__icon">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="sprite.svg#kg"></use>
+                                                          </svg>
+                                                    </div>
+                                                    <div class="item__title">Вес</div>
+                                                    <div class="item__text">215гр</div>
+                                                </li>
+                                                <li class="dropdowm__items item">
+                                                    <div class="item__icon">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="sprite.svg#patent"></use>
+                                                          </svg>
+                                                    </div>
+                                                    <div class="item__title">Гарантия</div>
+                                                    <div class="item__text">1 год</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slide__title-wrap">
+                                        <h2 class="slide__title">beats solo 3. цвет 
+                                            «атласное серебро»</h2>
+                                    </div>
+                                    <div class="slide__desc">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. 
+                                        Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                    </div>
+
+                                    <ul class="slide__info info__list">
+                                        <li class="info__item info">
+                                            <div class="info__title">Зарядка</div>
+                                            <div class="info__text">2  часа</div>
+                                        </li>
+                                        <li class="info__item info">
+                                            <div class="info__title">Вес</div>
+                                            <div class="info__text">215 грамм</div>
+                                        </li>
+                                    </ul>
+                                    <div class="slide__button">
+                                        <div class="slide__price">14 990 ₽</div>
+                                        <div class="slide__btn">
+                                            <a href="#" class="btn btn--theme--pink">Заказать</a>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </li>
+                            <!-- <li class="slider__item slide">
+                                <div class="slide__img-wrap">
+                                    <img src="../img/ellipse7.png" alt="headphones" class="slide__img">
+                                </div>
+                                <div class="slide__content">
+                                    <div class="slide__params">
+                                        <div class="slide__params_img-wrap">
+                                            <svg class="slide__params-img">
+                                                <use xlink:href="sprite.svg#gear"></use>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                    <div class="slide__title-wrap">
+                                        <h2 class="slide__title">beats solo pro. цвет «красный цитрус»</h2>
+                                    </div>
+                                    <div class="slide__desc">Беспроводные наушники Solo Pro помогают настроиться на творчество.
+                                         Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                                    </div>
+
+                                    <ul class="slide__info info__list">
+                                        <li class="info__item info">
+                                            <div class="info__title">Зарядка</div>
+                                            <div class="info__text">2  часа</div>
+                                        </li>
+                                        <li class="info__item info">
+                                            <div class="info__title">Вес</div>
+                                            <div class="info__text">215 грамм</div>
+                                        </li>
+                                    </ul>
+                                    <div class="slide__button">
+                                        <div class="slide__price">14 990 ₽</div>
+                                        <div class="slide__btn">
+                                            <a href="#" class="btn btn--theme--pink">Заказать</a>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </li> -->
+                        </ul>
+                        </div>
+                    
+                </div>
+            </section>
             <section class="section reviews__section">
                 <div class="container">
                     <h3 class="section__title headline__title">Отзывы</h3>
@@ -186,7 +334,7 @@
                             </div>
                         </div>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+                            <li class="reviews__switcher-item interactive-avatar interactive-avatar">
                                 <a href="#" class="interactive-avatar__link">
                                     <img src="img/rew/billy.jpeg" alt="billy" class="interactive-avatar__img">
                                 </a>
@@ -356,5 +504,37 @@
 
         </ul>
     </nav>
+    <div class="fullscreen-menu" id="active">
+        <a href="#" class="fullscreen-menu__close" id="close">
+            <svg class="fullscreen-menu__icon">
+                <use xlink:href="sprite.svg#close"></use>
+            </svg>
+        </a>
+        <nav class="menu menu__vertical">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Наушники</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цвета</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Кем мы работаем</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
