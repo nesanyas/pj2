@@ -664,7 +664,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .slide__img {
-    max-width: 19.125rem;
     margin-bottom: 5%;
   }
 }
@@ -679,7 +678,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .slide__img-wrap {
-    width: 60%;
+    width: 80%;
   }
 }
 .slide__content {
@@ -889,7 +888,7 @@ img {
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 2.625rem 2.4375rem 2.9375rem 2.1875rem;
+  padding: 2.9375rem 2.4375rem 2.9375rem 2.4375rem;
   position: relative;
   overflow: hidden;
 }
@@ -924,7 +923,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.3125rem 0rem 0rem 0.25rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {

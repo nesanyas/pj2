@@ -1,6 +1,6 @@
 .reviews__display {
     background: #F8FAF9;
-    padding: rem(42px) rem(39px) rem(47px) rem(35px);
+    padding: rem(47px) rem(39px) rem(47px) rem(39px);
     position: relative;
     overflow: hidden;
 
@@ -27,7 +27,6 @@
 
 .reviews__display-inner {
     display: flex;
-    padding: rem(5px) rem(0px) rem(0px) rem(4px);
 
     @include tablets {
         flex-direction: column;
