@@ -12,16 +12,15 @@
     &:last-child{
         margin-right: 0;
     }
-    
-    &--active {
-        border-color: #E01F3D;
-    }
 
     &:hover {
         border-color: #E01F3D;
     }
 }
 
+.interactive-avatar.active {
+    border-color: #E01F3D;
+}
 
 .interactive-avatar__link {
     display: block;

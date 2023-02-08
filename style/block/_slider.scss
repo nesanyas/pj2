@@ -11,12 +11,18 @@
     justify-content: center;
     position: relative; 
 
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
     
 }
 
 &__arrow {
     position: absolute;
     top: 50%;
+    z-index: 2000;
 
     &:hover {
         cursor: pointer;
@@ -28,7 +34,7 @@
         height: rem(40px);
     }
 
-    &--left {
+    &--prev {
         left: 0;
 
         @include tablets {
@@ -40,7 +46,7 @@
         }
     }
 
-    &--right {
+    &--next {
         right: 0;
 
         @include tablets {

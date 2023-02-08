@@ -155,5 +155,8 @@
       </clipPath>
     </defs>
   </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 7" id="polygon1">
+    <path d="M4 7L0.102887 0.249999L7.89711 0.25L4 7Z" fill="currentColor"></path>
+  </symbol>
 </svg>
 
