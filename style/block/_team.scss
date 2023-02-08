@@ -4,6 +4,8 @@
 
 
     &__item {
+        position: absolute;
+        top: 100%;
         flex: 1;
         text-align: center;
         margin-right: rem(20px);
@@ -36,6 +38,7 @@
         font-size: rem(18px);
         line-height: rem(21px);
         margin-bottom: rem(10px);
+
     }
 
     &__icon {
@@ -84,6 +87,7 @@
 
 .team--version--mobile {
     display: none;
+
 
     @include tablets {
         display: flex;

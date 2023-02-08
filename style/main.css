@@ -908,6 +908,8 @@ button {
           justify-content: space-between;
 }
 .team__item {
+  position: absolute;
+  top: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
