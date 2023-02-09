@@ -38,11 +38,11 @@
         left: 0;
 
         @include tablets {
-            left: 10%;
+            left: 4%;
         }
 
         @include phones {
-            left: 1%;
+            left: 0;
         }
     }
 
@@ -50,11 +50,11 @@
         right: 0;
 
         @include tablets {
-            right: 10%;
+            right: 4%;
         }
 
         @include phones {
-            right: 1%;
+            right: 0;
         }
     }
 
@@ -135,6 +135,7 @@
         @include tablets {
             font-size: rem(28px);
             line-height: rem(32px);
+            margin: 0 rem(10px);
         }
 
         &-wrap {
@@ -178,7 +179,8 @@
         padding-right: 20%;
 
         @include tablets {
-            padding: 0;
+            padding: 0 rem(10px);
+            margin: 0 rem(10px);
         }
 
     }

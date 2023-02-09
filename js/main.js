@@ -59,7 +59,6 @@ const openItem = item => {
 
     container.addClass("active");
     contentBlock.height(reqHeight);
-
 }
 
 const closeEveryItem = container => {
@@ -68,21 +67,26 @@ const closeEveryItem = container => {
 
     itemContainer.removeClass("active");
     items.height(0);
+
 }
 
 $(".team__title").click(e => {
     const $this = $(e.currentTarget);
     const container = $this.closest(".team");
     const elemContainer = $this.closest(".team__item");
-
+    const icon = container.find(".team__icon");
 
  if (elemContainer.hasClass("active")) {
+    icon.removeClass("team__icon--clicked");
     closeEveryItem(container); 
+
  } else {
+    icon.addClass("team__icon--clicked");
     closeEveryItem(container);    
     openItem($this);
  }
 })
+
 
 ///form
 
@@ -109,14 +113,12 @@ $(".form").submit(e => {
     const to = form.find("[name = 'to']");
 
     const modal = $("#modal");
-    const content = modal.find(".modal__content-wrap");
+    const content = modal.find(".modal__title");
 
-    modal.removeClass("error-modal");
+    content.removeClass("modal__error");
 
     const isValid = validateFields(form,[name, phone, comment, to]);
-    const xhr = new XMLHttpRequest();
-    xhr.open ('POST', 'https://webdev-api.loftschool.com/sendmail');
-            xhr.setRequestHeader('content-type', 'application/json');
+   
 
 
     if(isValid) {
@@ -131,17 +133,23 @@ $(".form").submit(e => {
             }
         });
 
+        const xhr = new XMLHttpRequest();
+        xhr.open ('POST', 'https://webdev-api.loftschool.com/sendmail');
+      
+                xhr.setRequestHeader('content-type', 'application/json');
+
+
         request.done((data) => {
             content.text(data.message);
             // console.log(data);
         })
 
-        request.fail(data => {
-
-            const message = (data.message);
+        request.fail((data) => {
+         
+            const message = content.innerHtml = "Отправить письмо не удалось, повоторите запрос позже";
             content.text(message);
-            modal.addClass("error-modal");
-            console.log(message);
+            content.addClass("modal__error");
+            // console.log(message);
         })
 
         request.always(() => {
