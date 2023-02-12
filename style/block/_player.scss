@@ -1,0 +1,35 @@
+.player {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &__wrapper {
+       text-align: center;
+    }
+
+    &-section {
+        background: #F8FAF9;
+    }
+
+    &__controls {
+        position: absolute;
+        background: #151515;
+        width: rem(660px);
+        height: rem(34px);
+
+    }
+
+    &__playback {
+        position: relative;
+        height: rem(16px);
+        width: rem(442px);
+        background: #333333;
+
+    }
+}
+
+.video {
+    width: rem(660px);
+    height: rem(390px);
+}

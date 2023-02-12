@@ -25,6 +25,10 @@
     margin-right: rem(27px);
     white-space: nowrap;
 
+    &:hover{
+        color: $pink;
+    }
+
     @include phones{
         justify-content: center;
     }
@@ -36,4 +40,8 @@
     height: rem(14px);
     margin-right: rem(6px);
     flex-shrink: 0;
+
+    &:hover{
+        fill: $pink;
+    }
 }

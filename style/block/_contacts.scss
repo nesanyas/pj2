@@ -1,44 +1,60 @@
 
-.section__map {
-    position: relative;
-    background: url(../img/map.jpeg) center top no-repeat;
+// .section__map {
+//     // position: relative;
+//     margin-bottom: rem(10px);
+//     width: 100%;
+//     height: 100%;
+//     // background: url(../img/map.jpeg) center top no-repeat;
+// }
+
+.map {
+    // position: relative;
+    margin-bottom: rem(112px);
+    width: 100%;
+    height: 100%;
+
+    @include phones {
+        margin-bottom: rem(180px);
+       }
 }
 
-
-// .map {
-//     // position: absolute;
-//     // top: 0;
-//     // left: 0;
-//     // width: 100%;
-    
-   
-// }
-
-// .map__contacts {
-//     min-width: 100%;
-// }
 
 .footer {
     position: absolute;
     height: rem(60px);
     left: 0;
     bottom: 0;
+    margin-top: rem(20px);
+    margin-bottom: rem(18px);
+    
+    @include tablets {
+        color: #000;
+       }
+
+       @include phones {
+        margin-bottom: rem(90px);
+        font-size: rem(18px);
+        line-height: rem(24px);
+       }
 }
  
  .footer__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
 
     @include phones {
-     flex-direction: column;   
+     flex-direction: column;  
+     align-items: center; 
     }
  }
 
  .footer__phone-number {
+    margin: 0;
 
     @include phones{
-        margin: rem(10px);
+        padding: rem(10px);
+
     }
    
  }

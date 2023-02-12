@@ -7,6 +7,8 @@
     <title>Beats</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5373e822-7479-43d2-80a5-a1f79dd9cd23&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="./style/main.css">
 
 </head>
@@ -14,7 +16,7 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hello">
+            <section data-section-id="hello" class="hello">
                 <div class="container hello__container">
                     <header class="header">
                         <a href="#" class="logo">
@@ -25,25 +27,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="hello" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Наушники</a>
+                                    <a href="#" data-scroll-to="benefits" class="menu__link">Наушники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Цвета</a>
+                                    <a href="#" data-scroll-to="product" class="menu__link">Цвета</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Кем мы работаем</a>
+                                    <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -67,7 +69,7 @@
                         <div class="hello__desc-title">Встречайте новую версию наушников 
                             из линейки Powerbeats.
                         </div>
-                        <a href="#" class="btn btn--theme--pink">Заказать</a>
+                        <a href="#" data-scroll-to="order" class="btn btn--theme--pink">Заказать</a>
                     </div>
                     <div class="hello__icons-section">
                         <ul class="features">
@@ -99,7 +101,7 @@
                     </div>
                 </div>
             </section>
-           <section class="section benefits__section"> 
+           <section data-section-id="benefits" class="section benefits__section"> 
                 <div class="container">
                    <div class="headline">
                     <h2 class="section__title headline__title">почему beats solo 3?</h2>
@@ -167,7 +169,7 @@
                    </ul>
                 </div>
             </section>
-            <section class="section slider__section">
+            <section data-section-id="slider" class="section slider__section">
                 <div class="container slider__container ">
                     <div class="slider__arrow slider__arrow--prev">
                     <svg class="slider__arrow--icon">
@@ -364,7 +366,7 @@
                     
                 </div>
             </section>
-            <section class="section team__section">
+            <section data-section-id="team" class="section team__section">
                 <div class="container">
                     <div class="section__title headline__title">команда</div>
                     <ul class="team team--version--desktop">
@@ -517,7 +519,53 @@
                     </ul>
                 </div>
             </section>
-            <section class="section reviews__section">
+            <section data-section-id="product" class="section product-menu__section">
+                <!-- <div class="container"> -->
+                    <h2 class="section__title headline__title--theme-left">цветa</h2>
+                    <ul class="product-menu">
+                        <li class="product-menu__item">
+                            <a href="#" class="product-menu__title">
+                                <div class="product-menu__block product-menu__block--grey"></div>
+                                    <span class="product-menu__block-text">«Атласное серебро»</span>
+                               
+                            </a>
+                            <div class="product-menu__content">
+                                <div class="product-menu__container">
+                                    <div class="product-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-menu__item">
+                            <a href="#" class="product-menu__title">
+                                <div class="product-menu__block product-menu__block--dark"></div>
+                                    <spanv class="product-menu__block-text">«Чёрный матовый»</spanv>
+                                
+                            </a>
+                            <div class="product-menu__content">
+                                <div class="product-menu__container">
+                                    <div class="product-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-menu__item">
+                            <a href="#" class="product-menu__title">
+                                <div class="product-menu__block product-menu__block--pink"></div>
+                                    <span class="product-menu__block-text">«Красный цитрус»</span>
+                                
+                            </a>
+                            <div class="product-menu__content">
+                                <div class="product-menu__container">
+                                    <div class="product-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+            </section>
+            <section data-section-id="reviews" class="section reviews__section">
                 <div class="container">
                     <h3 class="section__title headline__title">Отзывы</h3>
                     <div class="reviews">
@@ -574,7 +622,7 @@
                             </ul>
                         </div>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar">
+                            <li class="reviews__switcher-item interactive-avatar active">
                                 <a href="#" class="interactive-avatar__link" data-open="one">
                                     <img src="img/rew/billy.jpeg" alt="billy" class="interactive-avatar__img">
                                 </a>
@@ -593,7 +641,24 @@
                     </div>
                 </div>
             </section>
-            <section class="section order__section order__section--theme-dark">
+            <section data-section-id="player" class="section player-section">
+                <div class="container">
+                  <h2 class="section__title headline__title">Как мы работаем</h2>
+                  <div class="player-section__container">
+                    <div class="player">
+                      <div class="player__wrapper">
+                        <video class="video" src="//samplelib.com/lib/preview/mp4/sample-30s.mp4" type="video/mp4" controls></video>
+                      <div class="player__controls">
+                        <button class="player__start"></button>
+                        <div class="player__playback">
+                          <button class="player__playback-button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <section data-section-id="order" class="section order__section order__section--theme-dark">
                 <div class="container">
                     <h2 class="section__title  headline__title  headline__title--theme-dark">закажите доставку</h2>
                     <form autocomplete="off" class="form">
@@ -669,11 +734,10 @@
                     </form>
                 </div>
             </section>
-            <section class="section section__map">
-                <div class="map">
+            <section data-section-id="map" class="section section__map">
+                <div class="map" id="map">
                 <!-- <img src="img/map.png" alt="map" class="map__contacts"> -->
                 </div>
-             
                 <footer class="footer">
                     <div class="container">
                         <div class="footer__container">
@@ -709,7 +773,9 @@
                         </div>
                     </div>
                 </footer>
-            </section>  
+            </section>
+            
+
 
         </div>
     </div>
@@ -792,7 +858,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
